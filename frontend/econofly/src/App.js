@@ -128,7 +128,6 @@ return (
 
       <button type="submit" className="search-btn">Calculate Carbon Footprint</button>
     </form>
-
     {showMap && <MapComponent departure={departure} arrival={arrival} />}
     {carbonEmission && <div className="emissions-report">{carbonEmission}</div>}
   </div>
