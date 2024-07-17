@@ -1,0 +1,144 @@
+/* App.css */
+
+/* Basic reset for padding and margin for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
+  background-color: #e8f5e9; /* Light green background */
+  color: #2e7d32; /* Dark green font color for better readability */
+}
+
+/* Main App container */
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+  background-color: #fff; /* White background */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  margin: 10px;
+}
+
+/* Header styles */
+.App-header {
+  background-color: #4caf50; /* Green background */
+  color: white;
+  padding: 30px 0;
+  margin-bottom: 30px;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+/* Form styles */
+form {
+  margin: auto;
+  background-color: #f1f8e9; /* Lighter green background for the form */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.2s; /* Smooth transition for interactions */
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Label styles */
+label {
+  display: block;
+  margin: auto;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  color: #2e7d32; /* Dark green color for labels */
+  font-weight: 600; /* Make the labels a bit bolder */
+}
+
+/* Dropdown styles */
+select {
+  display: block;
+  width: calc(100% - 22px);
+  padding: 10px;
+  margin: 10px auto;
+  border: 1px solid #c8e6c9; /* Light green border */
+  border-radius: 20px;
+  background-color: white;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+}
+
+select:focus {
+  border-color: #66bb6a; /* Lighter green when focused */
+  box-shadow: 0 0 8px #66bb6a; /* Glow effect on focus */
+}
+
+/* Button styles */
+button {
+  display: block;
+  background-color: #4caf50; /* Green background */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+  margin: 20px auto; /* Add a bit more space above the button */
+  width: 100%;
+  max-width: 200px; /* Fixed width for the button */
+}
+
+button:hover {
+  background-color: #388e3c; /* Darker green on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow on hover for depth */
+}
+
+/* Map container styles */
+.MapContainer {
+  display: block;
+  margin: 30px auto; /* Add space above the map */
+  width: 100%;
+  max-width: 800px; /* Maximum width for the map */
+  height: 400px;
+  border: 1px solid #c8e6c9; /* Light green border */
+  border-radius: 10px;
+  overflow: hidden; /* Ensures no overflow of the map */
+}
+
+/* Leaflet map styles */
+.leaflet-container {
+  height: 100%;
+  width: 100%;
+}
+
+/* Emissions report styles */
+.emissions-report {
+  display: block;
+  margin: 15px auto;
+  padding: 10px;
+  background-color: #f1f8e9; /* Lighter green background */
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .MapContainer {
+    width: 90%; /* Adjust map width on smaller screens */
+  }
+
+  form {
+    width: 90%; /* Adjust form width on smaller screens */
+  }
+
+  select, button {
+    width: calc(100% - 40px); /* Adjust width for small screens */
+  }
+}
