@@ -17,7 +17,7 @@ CORS(app)
 
 @app.route('/', methods=['POST'])
 def calculate_emissions():
-    data = rq.get_json()
+    data = request.get_json()
     airport_1 = data['airport_1']
     airport_2 = data['airport_2']
 
@@ -34,11 +34,7 @@ def calculate_emissions():
     data = result['data']['attributes']
     df = pd.DataFrame(data = data)
     carbon_emission_flight = "Carbon Emissions (grams): " + str(df['carbon_g'][0])
-
-    # Convert the dictionary to a JSON-formatted string
     json_data = json.dumps(carbon_emission_flight)
-
-        # Set the appropriate response headers for JSON data
     response = app.response_class(
         response=json_data,
         status=200,

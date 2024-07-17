@@ -3,7 +3,7 @@ import { MapContainer, TileLayer, Marker, Polyline } from 'react-leaflet';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 
-import customMarkerIcon from './Dev marker.png'; // Import your custom marker image
+import customMarkerIcon from './planeIcon.png'; // Import your custom marker image
 
 
 const airportCoords = {

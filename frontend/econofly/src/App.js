@@ -107,7 +107,8 @@ const airports = {
 return (
   <div className="App">
     <header className="App-header">
-      <h1>Trip Carbon Footprint Calculator</h1>
+      <h1>EconoFly</h1>
+      <h2>Carbon Emission Estimator</h2>
     </header>
     <form onSubmit={handleSubmit}>
       <label htmlFor="departure-select">Select departure:</label>
@@ -128,6 +129,7 @@ return (
 
       <button type="submit" className="search-btn">Calculate Carbon Footprint</button>
     </form>
+    
     {showMap && <MapComponent departure={departure} arrival={arrival} />}
     {carbonEmission && <div className="emissions-report">{carbonEmission}</div>}
   </div>
