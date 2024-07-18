@@ -111,7 +111,7 @@ return (
       <h2>Carbon Emission Estimator</h2>
     </header>
     <form onSubmit={handleSubmit}>
-      <label htmlFor="departure-select">Select departure:</label>
+      <label htmlFor="departure-select">Select Departure:</label>
       <select id="departure-select" value={departure} onChange={handleDepartureChange}>
         <option value="">--Please choose an airport--</option>
         {Object.entries(airports).map(([code, name]) => (
@@ -119,7 +119,7 @@ return (
         ))}
       </select>
 
-      <label htmlFor="arrival-select">Select landing:</label>
+      <label htmlFor="arrival-select">Select Landing:</label>
       <select id="arrival-select" value={arrival} onChange={handleArrivalChange}>
         <option value="">--Please choose an airport--</option>
         {Object.entries(airports).map(([code, name]) => (
@@ -127,7 +127,7 @@ return (
         ))}
       </select>
 
-      <button type="submit" className="search-btn">Calculate Carbon Footprint</button>
+      <button type="submit" className="search-btn">Calculate Carbon Emission</button>
     </form>
     
     {showMap && <MapComponent departure={departure} arrival={arrival} />}

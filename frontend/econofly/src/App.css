@@ -30,11 +30,12 @@ body, html {
 
 /* Header styles */
 .App-header {
-  background-color: #4caf50; /* Green background */
+  background-color: #116600; /* Green background */
   color: white;
   padding: 30px 0;
+  padding-left: 40px;
   margin-bottom: 30px;
-  width: 100%;
+  width: 90%;
   border-radius: 10px 10px 0 0;
 }
 
@@ -47,7 +48,7 @@ form {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
   transition: transform 0.2s; /* Smooth transition for interactions */
   width: 100%;
-  max-width: 500px;
+  max-width: 1500px;
 }
 
 /* Label styles */
@@ -91,7 +92,7 @@ button {
   transition: all 0.3s ease-in-out;
   margin: 20px auto; /* Add a bit more space above the button */
   width: 100%;
-  max-width: 200px; /* Fixed width for the button */
+  max-width: 300px; /* Fixed width for the button */
 }
 
 button:hover {
