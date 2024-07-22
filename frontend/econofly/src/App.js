@@ -104,36 +104,41 @@ const airports = {
     setArrival(event.target.value);
   };
 
-return (
-  <div className="App">
-    <header className="App-header">
-      <h1>EconoFly</h1>
-      <h2>Carbon Emission Estimator</h2>
-    </header>
-    <form onSubmit={handleSubmit}>
-      <label htmlFor="departure-select">Select Departure:</label>
-      <select id="departure-select" value={departure} onChange={handleDepartureChange}>
-        <option value="">--Please choose an airport--</option>
-        {Object.entries(airports).map(([code, name]) => (
-          <option key={code} value={code}>{name}</option>
-        ))}
-      </select>
+  return (
+    <div className="App">
+      <header className="App-header">
+        <h1>EconoFly</h1>
+        <h2>Carbon Emission Estimator</h2>
+      </header>
+      <div className="content-container">
+        <form onSubmit={handleSubmit}>
+          <label htmlFor="departure-select">Select Departure:</label>
+          <select id="departure-select" value={departure} onChange={handleDepartureChange}>
+            <option value="">--Please choose an airport--</option>
+            {Object.entries(airports).map(([code, name]) => (
+              <option key={code} value={code}>{name}</option>
+            ))}
+          </select>
 
-      <label htmlFor="arrival-select">Select Landing:</label>
-      <select id="arrival-select" value={arrival} onChange={handleArrivalChange}>
-        <option value="">--Please choose an airport--</option>
-        {Object.entries(airports).map(([code, name]) => (
-          <option key={code} value={code}>{name}</option>
-        ))}
-      </select>
+          <label htmlFor="arrival-select">Select Landing:</label>
+          <select id="arrival-select" value={arrival} onChange={handleArrivalChange}>
+            <option value="">--Please choose an airport--</option>
+            {Object.entries(airports).map(([code, name]) => (
+              <option key={code} value={code}>{name}</option>
+            ))}
+          </select>
 
-      <button type="submit" className="search-btn">Calculate Carbon Emission</button>
-    </form>
-    
-    {showMap && <MapComponent departure={departure} arrival={arrival} />}
-    {carbonEmission && <div className="emissions-report">{carbonEmission}</div>}
-  </div>
-);
+          <button type="submit" className="search-btn">Calculate Carbon Emission</button>
+
+          {carbonEmission && <div className="emissions-report">{carbonEmission}</div>}
+        </form>
+        
+        <div className="map-box">
+          {showMap && <MapComponent departure={departure} arrival={arrival} />}
+        </div>
+      </div>
+    </div>
+  );
 }
 
 export default App;

@@ -32,7 +32,7 @@ body, html {
 .App-header {
   background-color: #116600; /* Green background */
   color: white;
-  padding: 30px 0;
+  padding: 3%;
   padding-left: 40px;
   margin-bottom: 30px;
   width: 90%;
@@ -48,7 +48,7 @@ form {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
   transition: transform 0.2s; /* Smooth transition for interactions */
   width: 100%;
-  max-width: 1500px;
+  max-width: 700px;
 }
 
 /* Label styles */
@@ -103,10 +103,10 @@ button:hover {
 /* Map container styles */
 .MapContainer {
   display: block;
-  margin: 30px auto; /* Add space above the map */
+  margin: 30px; /* Add space above the map */
   width: 100%;
   max-width: 800px; /* Maximum width for the map */
-  height: 400px;
+  height: 700px;
   border: 1px solid #c8e6c9; /* Light green border */
   border-radius: 10px;
   overflow: hidden; /* Ensures no overflow of the map */
