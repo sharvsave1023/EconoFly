@@ -47,7 +47,7 @@ form {
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
   transition: transform 0.2s; /* Smooth transition for interactions */
-  width: 100%;
+  width: 100vw; /* Full width of the viewport */
   max-width: 700px;
 }
 
@@ -104,9 +104,8 @@ button:hover {
 .MapContainer {
   display: block;
   margin: 30px; /* Add space above the map */
-  width: 100%;
-  max-width: 800px; /* Maximum width for the map */
-  height: 700px;
+  width: 100vw; /* Full width of the viewport */
+  height: 100vh; /* Full height of the viewport */
   border: 1px solid #c8e6c9; /* Light green border */
   border-radius: 10px;
   overflow: hidden; /* Ensures no overflow of the map */
