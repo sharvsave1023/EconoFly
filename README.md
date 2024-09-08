@@ -21,5 +21,3 @@ Econofly is a web application created using Create React App. It allows users to
 - numpy: A library for the Python programming language, adding support for large, multi-dimensional arrays and matrices, along with a large collection of high-level mathematical functions to operate on these arrays.
 - json: A built-in Python library for handling JSON data.
 - dotenv: A library for loading environment variables from a .env file.
-
-Feel free to explore the codebase further to understand the implementation details of the Econofly web application.
